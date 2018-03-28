@@ -3,6 +3,7 @@
   <head>
     <meta charset ="UTF-8">
     <title>The Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
   </head>
   <body>
     <header id='PageHeader'>
@@ -12,22 +13,46 @@
 
     <nav id="SiteNavigation">
       <ul>
-        <li><a ref="#">Home</li>
-        <li><a ref="#">About</li>
-        <li><a ref="#">Contact</li>
+        <li><a ref="#home">Home</li>
+        <li><a ref="#About">About</li>
+        <li><a ref="#Contact">Contact</li>
       </ul>
 
       <section id="PageContent">
-        <article class="BlogPost">
+        <article class="BlogPost" id="Content">
           <header>
+            <img src="blog-post.jpg" id="blog-post-img">
             <h1 class="BlogPostTitle">This is a Blog Post Title</h1>
             <time class="BlogPostDate" pubdate="pubdate">2012-0210</time>
           </header>
           <div class="BlogPostContent">
+            <p id="first-para">This paragraph will be bold-faced</p>
+            <p>This will not be bold</p>
             <p>Lorem psum dolor sit amet, consecteur adipisicing elit,
         sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+            <p class="warning">This text will be displayed in bold.</p>
+            <p>This text will NOT be displayed in bold.</p>
         </div>
       </article>
+      <section id="Content" class="SecondaryContent">
+        <section id="Thumbnail-Grid">
+          <ul>
+            <li><img src="thumbnail.png"></li>
+            <li><img src="thumbnail.png"></li>
+            <li><img src="thumbnail.png"></li>
+          </ul>
+          <ul>
+            <li><img src="thumbnail.png"></li>
+            <li><img src="thumbnail.png"></li>
+            <li><img src="thumbnail.png"></li>
+          </ul>
+          <ul>
+            <li><img src="thumbnail.png"></li>
+            <li><img src="thumbnail.png"></li>
+            <li><img src="thumbnail.png"></li>
+          </ul>
+        </section>
+      </section>
     </section>
   </body>
 

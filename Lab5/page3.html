@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--enter title, meta, css link here -->
+  <script>
+function testResults(form) {
+  var username = form.username.value;
+  alert("You registered: "+username+", ");
+}
+  </script>
+</head>
+<body>
+  <h1>MoggyBook!</h1>
+  <form>
+    <table border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td>Username:</td>
+        <td>
+          <input type="textarea" name="5" cellpading="5">
+        </td>
+      </tr>
+      <tr>
+        <td>*** element label ***</td>
+        <td>*** element input ***</td>
+      </tr>
+    </table>
+    <input type="submit" name="Submit" noClick="testResults(this.form)"/>
+  </form>
+</body>
+</html>
